@@ -1,0 +1,8 @@
+services:
+  car-simulator:
+    build: .
+    container_name: car-simulator
+    restart: unless-stopped
+
+    ports:
+      - "8656:80"
